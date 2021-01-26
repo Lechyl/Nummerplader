@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Nummerplader.Models;
+using Nummerplader.Services;
 
 namespace Nummerplader.Controllers
 {
@@ -13,6 +15,23 @@ namespace Nummerplader.Controllers
         public ActionResult Index()
         {
             return View();
+        }
+
+        // GET: NummerPladerController
+        public async Task<ActionResult> Index(string regNr)
+        {
+            
+            if (!String.IsNullOrEmpty(regNr))
+            {
+                API api = new API();
+                NummerPladerModel bilData = await api.GetNummerPladerByRegistreingsNummer(regNr);
+                return View(bilData);
+
+            }
+            else
+            {
+                return RedirectToAction("Index");
+            }
         }
 
         // GET: NummerPladerController/Details/5

@@ -12,14 +12,11 @@ C:\Users\aznzl\Desktop\Github\Nummerplader\Nummerplader\bin\Debug\netcoreapp3.1\
 C:\Users\aznzl\Desktop\Github\Nummerplader\Nummerplader\obj\Debug\netcoreapp3.1\Nummerplader.csprojAssemblyReference.cache
 C:\Users\aznzl\Desktop\Github\Nummerplader\Nummerplader\obj\Debug\netcoreapp3.1\Nummerplader.AssemblyInfoInputs.cache
 C:\Users\aznzl\Desktop\Github\Nummerplader\Nummerplader\obj\Debug\netcoreapp3.1\Nummerplader.AssemblyInfo.cs
-C:\Users\aznzl\Desktop\Github\Nummerplader\Nummerplader\obj\Debug\netcoreapp3.1\Nummerplader.csproj.CoreCompileInputs.cache
-C:\Users\aznzl\Desktop\Github\Nummerplader\Nummerplader\obj\Debug\netcoreapp3.1\Nummerplader.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\aznzl\Desktop\Github\Nummerplader\Nummerplader\obj\Debug\netcoreapp3.1\Nummerplader.RazorAssemblyInfo.cache
 C:\Users\aznzl\Desktop\Github\Nummerplader\Nummerplader\obj\Debug\netcoreapp3.1\Nummerplader.RazorAssemblyInfo.cs
 C:\Users\aznzl\Desktop\Github\Nummerplader\Nummerplader\obj\Debug\netcoreapp3.1\Nummerplader.TagHelpers.input.cache
 C:\Users\aznzl\Desktop\Github\Nummerplader\Nummerplader\obj\Debug\netcoreapp3.1\Nummerplader.TagHelpers.output.cache
 C:\Users\aznzl\Desktop\Github\Nummerplader\Nummerplader\obj\Debug\netcoreapp3.1\Nummerplader.RazorCoreGenerate.cache
-C:\Users\aznzl\Desktop\Github\Nummerplader\Nummerplader\obj\Debug\netcoreapp3.1\Razor\Views\NummerPladerController\Index.cshtml.g.cs
 C:\Users\aznzl\Desktop\Github\Nummerplader\Nummerplader\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\aznzl\Desktop\Github\Nummerplader\Nummerplader\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\aznzl\Desktop\Github\Nummerplader\Nummerplader\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -34,3 +31,4 @@ C:\Users\aznzl\Desktop\Github\Nummerplader\Nummerplader\obj\Debug\netcoreapp3.1\
 C:\Users\aznzl\Desktop\Github\Nummerplader\Nummerplader\obj\Debug\netcoreapp3.1\Nummerplader.pdb
 C:\Users\aznzl\Desktop\Github\Nummerplader\Nummerplader\obj\Debug\netcoreapp3.1\Nummerplader.genruntimeconfig.cache
 C:\Users\aznzl\Desktop\Github\Nummerplader\Nummerplader\obj\Debug\netcoreapp3.1\Nummerplader.csproj.CopyComplete
+C:\Users\aznzl\Desktop\Github\Nummerplader\Nummerplader\obj\Debug\netcoreapp3.1\Razor\Views\NummerPlader\Index.cshtml.g.cs

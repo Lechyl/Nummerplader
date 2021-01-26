@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Nummerplader.Models;
+using Newtonsoft.Json;
 namespace Nummerplader.Services
 {
     public class API
@@ -13,11 +14,21 @@ namespace Nummerplader.Services
         public API()
         {
             client = new HttpClient();
+            client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("X-AUTH-TOKEN", "ojd5b6np5d66o61xaskcmpypxterovsk");
         }
 
-        public NummerPladerModel GetNummerPladerByRegistreingsNummer()
+        public async Task<NummerPladerModel> GetNummerPladerByRegistreingsNummer(string regNr)
         {
 
+            NummerPladerModel bil = new NummerPladerModel();
+            var response = await client.GetAsync($"https://www.motorapi.dk/vehicles/{regNr}").ConfigureAwait(false);
+            if (response.IsSuccessStatusCode)
+            {
+                var responseBody = await response.Content.ReadAsStringAsync();
+                bil = JsonConvert.DeserializeObject<NummerPladerModel>(responseBody);
+            }
+
+            return bil;
         }
     }
 }

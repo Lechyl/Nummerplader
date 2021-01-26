@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "WlqF9GKfS6ajy0nnHRcvouqZCC2TQ5uaT2EvXiN4Moiu+9XbnSh8Pdk1rHZs+zpVbNy/rXJB+H0i6zjxeXqKZQ==",
+  "dgSpecHash": "Fdqn01owq5g3kuvr5E2bVn2QUkSnaQje53gV/KyoXCzzYVjHEWjDGaH3oDCHGiHNqCZ/k1+9HIY+B/ZA0mWD3w==",
   "success": true,
   "projectFilePath": "C:\\Users\\aznzl\\Desktop\\Github\\Nummerplader\\Nummerplader\\Nummerplader.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\aznzl\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
