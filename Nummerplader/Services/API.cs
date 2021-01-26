@@ -10,18 +10,18 @@ namespace Nummerplader.Services
     public class API
     {
         private HttpClient client;
-
+        protected readonly string Token = "ojd5b6np5d66o61xaskcmpypxterovsk";
         public API()
         {
             client = new HttpClient();
-            client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("X-AUTH-TOKEN", "ojd5b6np5d66o61xaskcmpypxterovsk");
+            client.DefaultRequestHeaders.Add("X-AUTH-TOKEN", Token);
         }
 
         public async Task<NummerPladerModel> GetNummerPladerByRegistreingsNummer(string regNr)
         {
 
             NummerPladerModel bil = new NummerPladerModel();
-            var response = await client.GetAsync($"https://www.motorapi.dk/vehicles/{regNr}").ConfigureAwait(false);
+            var response = await client.GetAsync($"https://v1.motorapi.dk/vehicles/{regNr}").ConfigureAwait(false);
             if (response.IsSuccessStatusCode)
             {
                 var responseBody = await response.Content.ReadAsStringAsync();

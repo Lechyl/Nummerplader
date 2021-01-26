@@ -14,21 +14,21 @@ namespace Nummerplader.Models
         public string Use { get; set; }
         public string First_registration { get; set; }
         public string Vin { get; set; }
-        public int Own_weight { get; set; }
-        public int Total_weight { get; set; }
-        public int Axels { get; set; }
+        public string Own_weight { get; set; }
+        public string Total_weight { get; set; }
+        public string Axels { get; set; }
         public string Pulling_axels { get; set; }
-        public int Seats { get; set; }
+        public string Seats { get; set; }
         public bool Coupling { get; set; }
-        public int Doors { get; set; }
+        public string Doors { get; set; }
         public string Make { get; set; }
         public string Model { get; set; }
         public string Variant { get; set; }
         public string Model_type { get; set; }
-        public int Model_year { get; set; }
+        public string Model_year { get; set; }
         public string Color { get; set; }
         public string Chassis_type { get; set; }
-        public int Engine_cylinders { get; set; }
+        public string Engine_cylinders { get; set; }
         public string Engine_volume { get; set; }
         public string Engine_power { get; set; }
         public string Fuel_type { get; set; }

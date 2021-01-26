@@ -32,3 +32,6 @@ C:\Users\aznzl\Desktop\Github\Nummerplader\Nummerplader\obj\Debug\netcoreapp3.1\
 C:\Users\aznzl\Desktop\Github\Nummerplader\Nummerplader\obj\Debug\netcoreapp3.1\Nummerplader.genruntimeconfig.cache
 C:\Users\aznzl\Desktop\Github\Nummerplader\Nummerplader\obj\Debug\netcoreapp3.1\Nummerplader.csproj.CopyComplete
 C:\Users\aznzl\Desktop\Github\Nummerplader\Nummerplader\obj\Debug\netcoreapp3.1\Razor\Views\NummerPlader\Index.cshtml.g.cs
+C:\Users\aznzl\Desktop\Github\Nummerplader\Nummerplader\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\aznzl\Desktop\Github\Nummerplader\Nummerplader\obj\Debug\netcoreapp3.1\Nummerplader.csproj.CoreCompileInputs.cache
+C:\Users\aznzl\Desktop\Github\Nummerplader\Nummerplader\obj\Debug\netcoreapp3.1\Nummerplader.MvcApplicationPartsAssemblyInfo.cache

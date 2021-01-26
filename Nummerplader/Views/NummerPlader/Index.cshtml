@@ -7,4 +7,17 @@
 
 <div>
 
+    <div>
+        <form asp-action="Index"  asp-controller="NummerPlader" method="get">
+            <input name="regnr" type="text" placeholder="Indtast Registerings nummer" />
+            <input type="submit" />
+        </form>
+    </div>
+    @if (Model != null)
+    {
+        <div>
+            <p>@Model.Model</p>
+        </div>
+    }
+
 </div>

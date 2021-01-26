@@ -11,13 +11,13 @@ namespace Nummerplader.Controllers
 {
     public class NummerPladerController : Controller
     {
-        // GET: NummerPladerController
-        public ActionResult Index()
+       // GET: NummerPladerController
+      /*  public ActionResult Index()
         {
             return View();
-        }
+        }*/
 
-        // GET: NummerPladerController
+        // GET: NummerPladerController?regNr=
         public async Task<ActionResult> Index(string regNr)
         {
             
@@ -30,7 +30,7 @@ namespace Nummerplader.Controllers
             }
             else
             {
-                return RedirectToAction("Index");
+                return View();
             }
         }
 
