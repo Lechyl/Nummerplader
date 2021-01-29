@@ -1,3 +1,13 @@
 ﻿.col-black-border {
     border: 2px solid #000000;
+    border-radius: 5px;
+}
+.underline {
+    margin-top: 5px;
+    border-bottom: 1px solid #000000;
+}
+
+.alert-border{
+    border-radius: 10px;
+    text-align:center;
 }

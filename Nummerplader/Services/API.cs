@@ -20,7 +20,7 @@ namespace Nummerplader.Services
         public async Task<NummerPladerModel> GetNummerPladerByRegistreingsNummer(string regNr)
         {
 
-            NummerPladerModel bil = new NummerPladerModel();
+            NummerPladerModel bil = null;
             var response = await client.GetAsync($"https://v1.motorapi.dk/vehicles/{regNr}").ConfigureAwait(false);
             if (response.IsSuccessStatusCode)
             {

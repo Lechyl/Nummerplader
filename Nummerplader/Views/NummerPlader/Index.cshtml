@@ -2,6 +2,7 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    ViewData["Title"] = "Nummer Plader";
 }
 @model Nummerplader.Models.NummerPladerModel
 
@@ -10,30 +11,50 @@
 
         <div style="text-align:center; margin-bottom:3%">
             <form asp-action="Index" asp-controller="NummerPlader" method="get">
-                <input name="regnr" type="text" placeholder="Indtast Registerings nummer" />
-                <input type="submit" />
+                <input name="regnr" type="text" placeholder="Indtast nummerplade" />
+                <input class="btn-outline-primary" type="submit" value="Kør her" />
             </form>
         </div>
         @if (Model != null)
         {
-            <div class="row">
-                <div class="col col-black-border">
-                    <p>@Model.Model</p>
-                    <p>@Model.Model</p>
-                    <p>@Model.Model</p>
+            <div class="row col-black-border">
 
-
-
+                <div class="col  border-right">
+                    <p class="underline"><b>@Html.DisplayNameFor(m => m.Registration_number)</b> : @Model.Registration_number</p> 
+                    <p class="underline"><b>@Html.DisplayNameFor(m => m.Status)</b> : @Model.Status</p>
+                    <p class="underline"><b>@Html.DisplayNameFor(m => m.Status_date)</b> : @Model.Status_date</p>
+                    <p class="underline"><b>@Html.DisplayNameFor(m => m.Type)</b> : @Model.Type</p>
+                    <p class="underline"><b>@Html.DisplayNameFor(m => m.Use)</b> : @Model.Use</p>
+                    <p class="underline"><b>@Html.DisplayNameFor(m => m.First_registration)</b> : @Model.First_registration</p>
+                    <p class="underline"><b>@Html.DisplayNameFor(m => m.Vin)</b> : @Model.Vin</p>
+                    <p class="underline"><b>@Html.DisplayNameFor(m => m.Own_weight)</b> : @Model.Own_weight</p>
+                    <p class="underline"><b>@Html.DisplayNameFor(m => m.Total_weight)</b> : @Model.Total_weight</p>
+                    <p class="underline"><b>@Html.DisplayNameFor(m => m.Axels)</b> : @Model.Axels</p>
+                    <p class="underline"><b>@Html.DisplayNameFor(m => m.Pulling_axels)</b> : @Model.Pulling_axels</p>
+                    <p class="underline"><b>@Html.DisplayNameFor(m => m.Seats)</b> : @Model.Seats</p>
+                    <p class="underline"><b>@Html.DisplayNameFor(m => m.Coupling)</b> : @Model.Coupling</p>
                 </div>
-                <div class="col col-black-border">
-                    <p>@Model.Color</p>
-                    <p>@Model.Color</p>
-                    <p>@Model.Color</p>
-
-
+                <div class="col ">
+                    <p class="underline"><b>@Html.DisplayNameFor(m => m.Doors)</b> : @Model.Doors</p>
+                    <p class="underline"><b>@Html.DisplayNameFor(m => m.Make)</b> : @Model.Make</p>
+                    <p class="underline"><b>@Html.DisplayNameFor(m => m.Model)</b> : @Model.Model</p>
+                    <p class="underline"><b>@Html.DisplayNameFor(m => m.Variant)</b> : @Model.Variant</p>
+                    <p class="underline"><b>@Html.DisplayNameFor(m => m.Model_type)</b> : @Model.Model_type</p>
+                    <p class="underline"><b>@Html.DisplayNameFor(m => m.Model_year)</b> : @Model.Model_year</p>
+                    <p class="underline"><b>@Html.DisplayNameFor(m => m.Color)</b> : @Model.Color</p>
+                    <p class="underline"><b>@Html.DisplayNameFor(m => m.Chassis_type)</b> : @Model.Chassis_type</p>
+                    <p class="underline"><b>@Html.DisplayNameFor(m => m.Engine_cylinders)</b> : @Model.Engine_cylinders</p>
+                    <p class="underline"><b>@Html.DisplayNameFor(m => m.Engine_volume)</b> : @Model.Engine_volume</p>
+                    <p class="underline"><b>@Html.DisplayNameFor(m => m.Engine_power)</b> : @Model.Engine_power</p>
+                    <p class="underline"><b>@Html.DisplayNameFor(m => m.Fuel_type)</b> : @Model.Fuel_type</p>
+                    <p class="underline"><b>@Html.DisplayNameFor(m => m.Registration_zipcode)</b> : @Model.Registration_zipcode</p>
                 </div>
             </div>
 
+        }
+        @if(ViewData["Alert"] != null) { 
+        
+            <p class="alert-danger alert-border">Ingen Nummerplade Fundet</p>
         }
 
     </div>

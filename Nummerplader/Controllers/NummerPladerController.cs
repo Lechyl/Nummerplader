@@ -20,11 +20,16 @@ namespace Nummerplader.Controllers
         // GET: NummerPladerController?regNr=
         public async Task<ActionResult> Index(string regNr)
         {
-            
             if (!String.IsNullOrEmpty(regNr))
             {
                 API api = new API();
                 NummerPladerModel bilData = await api.GetNummerPladerByRegistreingsNummer(regNr);
+                if(bilData == null)
+                {
+                    ViewData["Alert"] = "true";
+                }
+                
+
                 return View(bilData);
 
             }
